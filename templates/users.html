@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students_List</title>
+    <link rel="icon" href="{{url_for('static',filename='image/use_ic.png')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style2.css')}}">
+</head>
+<body>
+<h1>Registered Students Details:</h1>
+
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+        <td>Qualification</td>
+        <td>Course</td>
+        <td>City</td>
+
+    </tr>
+    {% for x in students %}
+    <tr>
+        <td>{{x[0]}}</td>
+        <td>{{x[1]}}</td>
+        <td>{{x[2]}}</td>
+        <td>{{x[3]}}</td>
+        <td>{{x[4]}}</td>
+        <td>{{x[5]}}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <p align="right"><a href="home">Home</a></p>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="icon" href="{{url_for('static',filename='image/reg_ic.png')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+<body>
+<center>
+    <h1>Let's Achieve Together Academy</h1>
+    <h2>Knowledge is of no value,Unless you practice</h2>
+    <h4> Learn | Practice| Grow</h4>
+    <hr>
+    <img src="{{url_for('static',filename='image/body_img.jpg')}}">
+    <br>
+    <br>
+    <form action="/confirm" method="post">
+        <table>
+        <tr>
+        <td>Name:</td>
+        <td><input type="text" placeholder="Enter your Name" name="name"></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+        <td><input type="number" placeholder="Enter your Age" name="age"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio"  name="gender">Male
+        <input type="radio" name="gender">Female</td>
+        </tr>
+        <tr>
+            <td>Qualification:</td>
+            <td><input type="text" placeholder="Enter your Degree details" name="degree"></td>
+        </tr>
+            <tr>
+            <td>Select a course:</td>
+        <td><select>
+            <option name="course">Python</option>
+            <option name="course">Mysql</option>
+            <option name="course">DotNet</option>
+        </select></td>
+        </tr>
+        <td>City:</td>
+        <td><input type="text" placeholder="Enter your City Name" name="city"></td>
+        <tr>
+            <td><input type="reset"></td>
+            <td><input type="submit" value="Register"></td>
+        </tr>
+
+        </table>
+        <hr>
+        <center>
+        <h3> Contact us</h3>
+        <p>+9123948756 | latacademy@gmail.com</p>
+
+        </center>
+
+
+
+
+
+    </form>
+
+
+</center>
+
+</body>
+</html>
